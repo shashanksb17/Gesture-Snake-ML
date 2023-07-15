@@ -1,0 +1,115 @@
+/* @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap'); */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Consolas, "Courier New", monospace;
+    /* border: 1px solid red; */
+}
+#info h1{
+    padding: 20px;
+    text-decoration: underline;
+}
+#info p{
+    padding: 10px;
+}
+#info ul{
+    padding-left: 40px;
+}
+.body{
+    /* background: url("../img/bg.jpg");  */
+    background-color: rgb(172, 172, 172);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 59px;
+    /* right: 200px; */
+    font-size: 30px;
+    font-weight: bold;
+    
+    /* font-family: 'New Tegomin', serif; */
+}
+/* #snakebox{
+    margin-right: 0px;
+} */
+#hiscoreBox{
+    position: absolute;
+    /* top: 9px; */
+    /* right: 140px; */
+    font-size: 30px;
+    font-weight: bold;
+    /* font-family: 'New Tegomin', serif; */
+}
+#canvas{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    z-index: 2;
+}
+#score{
+    text-align: center;
+    /* margin-left: 50%; */
+}
+#board{
+    background: rgb(32, 32, 32);
+    width: 80vmin;
+    height: 80vmin;
+    /* border: 2px solid rgb(255, 255, 255); */
+    display: grid;
+    margin-top: 100px;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#video{
+    margin-top: -100px;
+    height: 500px;
+    width: 500px;
+    /* margin: auto; */
+    text-align: center;
+    /* gap: 50px; */
+}
+#video button{
+    margin: 30px;
+    background-color: rgb(143, 255, 143);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.head{
+    background: rgb(0, 132, 255);
+    /* border: 2px solid rgb(255, 255, 255);  */
+    transform: scale(1.02);
+    /* border-radius: 9px; */
+}
+
+#video button:hover{
+    background-color: rgb(46, 188, 46);
+}
+
+.snake{
+    background-color: rgb(0, 132, 255);
+    /* border: .25vmin solid white;
+    border-radius: 12px; */
+}
+
+.food{
+    background: rgb(255, 255, 0);
+    /* border: .25vmin solid rgb(255, 255, 255); */
+    /* border-radius: 8px; */
+}
+
+#label-container{
+    font-size: 21px;
+}

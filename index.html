@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI snake</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="body">
+        <div id="info">
+            <h1>Gesture Snake</h1>
+            <p>Instructions:</p>
+            <ul>        
+                <li>Hand towards camera.&#128075</li>
+                <li>Thumb up: Snake goes up.&#128077</li>
+                <li>Thumb down: Snake goes down.&#128078</li>
+                <li>Point right: Snake moves right.&#128073</li>
+                <li>Point left: Snake moves left.&#128072</li>
+                <li>Palm towards camera:pause.&#128400</li>
+                <li>Enjoy the game.&#129311</li>
+            </ul>
+
+        </div>
+        
+        <div id="video">
+            <button type="button" onclick="init()">Start</button>
+            <div><canvas id="canvas"></canvas></div>
+            <div id="label-container"></div>
+        </div>
+        <div id="snakebox">
+            <div id="score">
+                <div id="scoreBox">Score: 0</div>
+                <div id="hiscoreBox">HiScore: 0</div>
+            </div>
+            
+            <div id="board"></div>
+        </div>
+        
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
+<script src="js/index1.js"></script>
+</html>
